@@ -1,0 +1,6 @@
+{
+  "name": "PhysikOS - Advanced Physics Learning & Simulation Platform",
+  "description": "Comprehensive Class 11 HSC & JEE Main Physics educational workstation with 14 chapters, interactive virtual labs, formula vault, and mock test engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

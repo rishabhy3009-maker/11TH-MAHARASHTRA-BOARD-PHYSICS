@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#2fd9f4","primary-container":"#4f46e5","primary-fixed":"#e2dfff","surface":"#0f131c","inverse-primary":"#4d44e3","surface-container-high":"#262a34","surface-tint":"#c3c0ff","tertiary":"#4edea3","on-primary":"#1d00a5","secondary-container":"#00cbe6","surface-bright":"#353943","surface-variant":"#31353f","surface-container-highest":"#31353f","on-primary-container":"#dad7ff","primary-fixed-dim":"#c3c0ff","secondary":"#5de6ff","secondary-fixed":"#a2eeff","on-primary-fixed-variant":"#3323cc","outline":"#918fa1","error":"#ffb4ab","error-container":"#93000a","on-error":"#690005","on-surface-variant":"#c7c4d8","tertiary-fixed":"#6ffbbe","on-background":"#dfe2ef","on-tertiary-fixed-variant":"#005236","background":"#0f131c","on-secondary-fixed-variant":"#004e5a","on-secondary-fixed":"#001f25","surface-dim":"#0f131c","surface-container-lowest":"#0a0e17","on-primary-fixed":"#0f0069","primary":"#c3c0ff","on-secondary-container":"#00515d","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#67f4b7","inverse-on-surface":"#2c303a","on-tertiary":"#003824","tertiary-container":"#006e4b","surface-container-low":"#181b25","outline-variant":"#464555","on-secondary":"#00363e","on-tertiary-fixed":"#002113","on-surface":"#dfe2ef","surface-container":"#1c1f29","on-error-container":"#ffdad6","inverse-surface":"#dfe2ef"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","margin":"2rem"},"fontFamily":{"display-hero-mobile":["Inter"],"headline-md":["Inter"],"headline-sm":["Inter"],"mono-equation":["JetBrains Mono"],"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"label-caps":["JetBrains Mono"],"mono-data":["JetBrains Mono"],"display-hero":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"mono-equation":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"mono-data":["13px",{"lineHeight":"18px","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-secondary text-[22px]">science</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">PhysikOS</span><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest leading-none mt-1">MH-XI • JEE MAIN</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-xl shadow-[0_0_16px_-2px_rgba(79,70,229,0.5)]"><a aria-current="page" class="px-space-md py-space-xs font-body-sm transition-colors bg-primary-container text-on-primary-container rounded-xl shadow-[0_0_16px_-2px_rgba(79,70,229,0.5)]" data-path="chapters" href="#">Chapters (1-14)</a><a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="virtual-labs" href="#">Virtual Labs (30+ Simulations)</a><a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="formula-vault" href="#">Formula Vault</a><a class="px-space-md py-space-xs rounded-xl font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="jee-mock-test-engine" href="#">JEE Mock Test Engine</a></nav></div><div class="flex-1 max-w-md hidden md:block mx-space-sm"><div class="relative flex items-center bg-surface-container-lowest rounded-xl px-space-md py-space-xs"><span class="material-symbols-outlined text-outline text-[18px] mr-space-sm">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search topics, formulas, or JEE questions..." type="text"/><kbd class="font-label-caps text-label-caps text-outline bg-surface-container-high px-space-xs py-0.5 rounded">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-sm bg-surface-container-high px-space-md py-1.5 rounded-xl"><div class="flex flex-col items-end"><span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">68% Completed</span><span class="font-mono-data text-mono-data text-on-surface-variant">14/14 Ch Synced</span></div><div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center"><span class="material-symbols-outlined text-tertiary text-[18px]">verified</span></div></div><div class="hidden 2xl:flex items-center gap-space-sm bg-surface-container-high px-space-md py-1.5 rounded-xl"><div class="flex flex-col items-start"><span class="font-label-caps text-label-caps text-secondary uppercase">JEE Mock Avg</span><span class="font-mono-data text-mono-data text-on-surface">82/100 • 98.4 %ile</span></div><span class="material-symbols-outlined text-secondary text-[18px]">trending_up</span></div><button class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-80 bg-surface-container-low z-40 flex flex-col shadow-[0_4px_20px_-2px_rgba(0,0,0,0.5)]"><div class="px-space-md py-space-md bg-surface-container-low"><div class="flex items-center justify-between mb-space-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">menu_book</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Class 11 Physics (HSC)</span></div><span class="font-mono-data text-mono-data text-secondary-fixed-dim bg-surface-container px-space-xs py-0.5 rounded">14 Ch</span></div><div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[68%]"></div></div></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_0_16px_-2px_rgba(79,70,229,0.5)]"><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-01-units-and-measurements" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">01</span><span class="font-body-sm text-body-sm truncate">Units and Measurements</span></div><span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Done</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-02-mathematical-methods" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">02</span><span class="font-body-sm text-body-sm truncate">Mathematical Methods</span></div><span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Done</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-03-motion-in-a-plane" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">03</span><span class="font-body-sm text-body-sm truncate">Motion in a Plane</span></div><span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Done</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-04-laws-of-motion" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">04</span><span class="font-body-sm text-body-sm truncate">Laws of Motion</span></div><span class="font-label-caps text-label-caps text-secondary bg-surface-container px-1.5 py-0.5 rounded">Active</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-05-gravitation" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">05</span><span class="font-body-sm text-body-sm truncate">Gravitation</span></div><span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Done</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-06-mechanical-properties-of-solids" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">06</span><span class="font-body-sm text-body-sm truncate">Mechanical Prop. of Solids</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-07-thermal-properties-of-matter" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">07</span><span class="font-body-sm text-body-sm truncate">Thermal Prop. of Matter</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-08-sound" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">08</span><span class="font-body-sm text-body-sm truncate">Sound</span></div><span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Done</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-09-optics" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">09</span><span class="font-body-sm text-body-sm truncate">Optics</span></div><span class="font-label-caps text-label-caps text-secondary bg-surface-container px-1.5 py-0.5 rounded">Active</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-10-electrostatics" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">10</span><span class="font-body-sm text-body-sm truncate">Electrostatics</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-11-electric-current-through-conductors" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">11</span><span class="font-body-sm text-body-sm truncate">Electric Current Conductors</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-12-magnetism" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">12</span><span class="font-body-sm text-body-sm truncate">Magnetism</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-13-electromagnetic-waves-and-communication-system" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">13</span><span class="font-body-sm text-body-sm truncate">EM Waves &amp; Communication</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ch-14-semiconductors" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="font-mono-data text-mono-data text-outline">14</span><span class="font-body-sm text-body-sm truncate">Semiconductors</span></div><span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span></a></nav><div class="p-space-md bg-surface-container-low"><div class="bg-surface-container rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">tune</span><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface">Precision HUD</span><span class="font-label-caps text-label-caps text-outline">LaTeX &amp; SI Engine</span></div></div><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span></div></div></aside><div class="pl-80"><main class="relative w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Command Hub Sub-Navigation & Syllabus Control -->
+<div class="w-full bg-surface-container-low px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Top Bar: Academic Context & Filter Engine -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Maharashtra HSC Class 11 • Target JEE Main 2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Syllabus Master Architecture</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+          14 chapters calibrated to Maharashtra State Board benchmarks and elevated to JEE Main single-choice, numerical integer, and graphical analysis standards.
+        </p>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container px-space-md py-space-sm rounded-xl flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Chapters</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">14</span>
+<span class="font-mono-data text-mono-data text-tertiary">100% Synced</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-xl flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Virtual Labs</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary">42</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">Live Sims</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-xl flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">Formula Cards</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary">350+</span>
+<span class="font-mono-data text-mono-data text-tertiary">SI Rigor</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-xl flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">JEE Mocks</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">5</span>
+<span class="font-mono-data text-mono-data text-secondary-fixed-dim">NTA Pattern</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Filter Bar & Interactive Unit Switcher -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container-high/60 backdrop-blur-md p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 md:pb-0" id="filter-container">
+<button class="filter-btn active-filter px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all bg-primary-container text-on-primary-container shadow-md" onclick="filterCategory('all', this)">
+          ALL (14)
+        </button>
+<button class="filter-btn px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface" onclick="filterCategory('mechanics', this)">
+          MECHANICS (1-6)
+        </button>
+<button class="filter-btn px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface" onclick="filterCategory('thermal-sound', this)">
+          THERMAL &amp; SOUND (7-8)
+        </button>
+<button class="filter-btn px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface" onclick="filterCategory('optics', this)">
+          OPTICS (9)
+        </button>
+<button class="filter-btn px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface" onclick="filterCategory('electromagnetism', this)">
+          ELECTROMAGNETISM (10-12)
+        </button>
+<button class="filter-btn px-space-md py-1.5 rounded-xl font-label-caps text-label-caps tracking-wider transition-all text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface" onclick="filterCategory('modern', this)">
+          MODERN &amp; WAVES (13-14)
+        </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative flex-1 md:w-64">
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm px-space-md py-1.5 rounded-xl focus:outline-none focus:bg-surface-container" id="chapter-search" oninput="searchChapters(this.value)" placeholder="Filter subtopics, laws..." type="text"/>
+<span class="material-symbols-outlined text-outline text-[16px] absolute right-3 top-2 pointer-events-none">search</span>
+</div>
+<button class="px-space-sm py-1.5 bg-surface-container text-on-surface-variant hover:text-on-surface rounded-xl flex items-center gap-1 font-label-caps text-label-caps transition-colors" onclick="toggleAllView()" title="Toggle Detail Density">
+<span class="material-symbols-outlined text-[18px]">density_medium</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Workstation Layout: 12-Column Grid -->
+<div class="w-full px-gutter py-space-lg grid grid-cols-1 2xl:grid-cols-12 gap-space-lg">
+<!-- Chapter Cards Matrix (8 Columns on 2xl) -->
+<div class="2xl:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Curriculum Stream</span>
+<span class="font-mono-data text-mono-data text-outline" id="match-count">14 Modules Active</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span> Board Direct
+          <span class="inline-block w-2 h-2 rounded-full bg-secondary ml-2"></span> JEE Weightage
+        </div>
+</div>
+<!-- Grid of Chapter Modules -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="chapters-grid">
+<!-- Chapter 01 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="mechanics" data-keywords="dimensions errors significant figures vernier screw gauge dimensional analysis units">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 01</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Completed</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 5M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Units and Measurements</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Dimensions &amp; dimensional analysis, propagation of errors, significant figures, precision vernier calipers, and screw gauge screw-pitch micrometer.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">[M^a L^b T^c]</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">ΔZ/Z = ΔA/A + ΔB/B</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 48 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 02 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="mechanics" data-keywords="mathematical methods vectors dot cross product scalar differentiation integration kinematics calculus">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 02</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Completed</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 4M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mathematical Methods</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Vector resolution in 3D, scalar dot and vector cross products, right-hand rule, rate of change differential calculus, and definite kinematic integrals.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">|A × B| = AB sin θ</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">v = dx/dt</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 65 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 03 (Active Hub Highlight) -->
+<div class="chapter-card bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-xl relative overflow-hidden" data-category="mechanics" data-keywords="motion in a plane projectile trajectory uniform circular motion ucm angular velocity tangential acceleration range height">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-secondary-fixed-dim bg-secondary-container/20 px-2 py-0.5 rounded-lg font-bold">CH 03</span>
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container-highest px-1.5 py-0.5 rounded font-bold">Now Inspecting</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-secondary">
+<span>HSC: 6M</span>
+<span>•</span>
+<span class="text-secondary font-bold">JEE: 8M</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-secondary tracking-tight">Motion in a Plane</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              2D kinematics, projectile motion on horizontal and inclined planes, parabolic trajectory verification, centripetal acceleration, and non-uniform circular motion.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">R = (u² sin 2θ) / g</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-primary">a_c = v² / r</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-caps text-label-caps shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> Study Dossier
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Launch Sim
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-surface-bright transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> 92 JEE PYQs
+            </button>
+</div>
+</div>
+<!-- Chapter 04 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="mechanics" data-keywords="laws of motion newton friction static kinetic banking of roads collisions momentum impulse pseudoforce">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 04</span>
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container px-1.5 py-0.5 rounded">Active</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 7M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 8M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Laws of Motion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Newton's three laws, inertial/non-inertial frames, pseudo-forces, static/kinetic/rolling friction, banked roads, and elastic/inelastic 1D/2D collisions.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">v_max = √(rg tan θ)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">F_net = dp/dt</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 114 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 05 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="mechanics" data-keywords="gravitation kepler laws gravitational potential escape velocity satellites orbital geostationary acceleration due to gravity">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 05</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Completed</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 5M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gravitation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Kepler's laws of planetary orbits, variation of g with altitude &amp; depth, gravitational potential &amp; energy, escape velocity, and satellite orbital periods.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">v_e = √(2GM / R)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">T² ∝ r³</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 58 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 06 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="mechanics" data-keywords="mechanical properties of solids stress strain hooke youngs bulk shear modulus poissons ratio elasticity">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 06</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 4M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mechanical Properties of Solids</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Stress-strain curve behavior, Hooke's law, moduli of elasticity (Young's, Bulk, Shear), Poisson's ratio, and elastic potential strain energy.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">Y = (F·L) / (A·ΔL)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">u = ½ × stress × strain</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 34 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 07 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="thermal-sound" data-keywords="thermal properties of matter thermal expansion specific heat newton law of cooling calorimetry heat transfer conduction radiation">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 07</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 5M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Thermal Properties of Matter</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Linear/superficial/cubical thermal expansion, calorimetry equations, Newton's law of cooling curves, and thermal conductivity coefficients.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">dQ/dt = -k(T - T_0)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">ΔL = L_0 α ΔT</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 41 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 08 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="thermal-sound" data-keywords="sound waves longitudinal transverse doppler effect resonance beats organ pipe laplace correction speed of sound">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 08</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-1.5 py-0.5 rounded">Completed</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 5M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sound</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Propagation of longitudinal waves, Newton-Laplace formula, superposition of acoustic waves, formation of beats, and the relativistic-free Doppler effect.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">f_app = f_0 × (v ± v_o)/(v ∓ v_s)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">f_b = |f_1 - f_2|</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 52 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 09 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="optics" data-keywords="optics refraction total internal reflection prism dispersion lens makers formula spherical mirrors lenses magnification">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded-lg">CH 09</span>
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container px-1.5 py-0.5 rounded">Active</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 7M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 8M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Optics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Refraction at spherical surfaces, critical angle, optical fibers, prism deviation formulas, chromatic aberration, and the Lens Maker's equation.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">1/f = (μ-1)(1/R_1 - 1/R_2)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">sin θ_c = 1/μ</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 78 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 10 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="electromagnetism" data-keywords="electrostatics coulombs law electric field dipole gauss law flux continuous charge cylinder sheet">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 10</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 6M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 8M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Electrostatics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Coulomb's inverse square law in vector format, electric dipole torque in uniform fields, Gauss's law applications for infinite wire and plane charged sheet.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">Φ = ∮ E·dA = Q_enc / ε_0</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">τ = p × E</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 86 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 11 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="electromagnetism" data-keywords="electric current conductors ohms law drift velocity kirchhoff laws wheatstone bridge meter bridge potentiometer resistivity">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 11</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 6M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 8M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Electric Current Through Conductors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Drift velocity &amp; relaxation time, Ohm's law microscopic form, temperature dependence of resistance, Kirchhoff's loop/junction laws, and Wheatstone bridge balance.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">I = n e A v_d</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">P/Q = R/S</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 95 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 12 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="electromagnetism" data-keywords="magnetism magnetic dipole moment earths magnetism tangent law dip declination magnetic field lines">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 12</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 4M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Magnetism</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Magnetic dipole moments of bar magnets, lines of magnetic force, Earth's magnetic elements (declination &amp; dip angle), and tangent galvanometer law.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">B_axial = 2(μ_0/4π) M / r³</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">B = B_H tan θ</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 38 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 13 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="modern" data-keywords="electromagnetic waves em communication system em spectrum maxwell displacement current modulation am fm antenna propagation sky ground space wave">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 13</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 4M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">EM Waves &amp; Communication System</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Electromagnetic wave characteristics, transverse nature, EM spectrum ordering, ground/sky/space wave propagation, and amplitude modulation index.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">c = 1 / √(μ_0 ε_0)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">μ = A_m / A_c</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 30 MCQs
+            </button>
+</div>
+</div>
+<!-- Chapter 14 -->
+<div class="chapter-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md transition-all flex flex-col justify-between shadow-md" data-category="modern" data-keywords="semiconductors pn junction diode rectifiers half wave full wave zener diode logic gates and or not nand nor truth table">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data text-mono-data text-outline bg-surface-container px-2 py-0.5 rounded-lg">CH 14</span>
+<span class="font-label-caps text-label-caps text-outline bg-surface-container-lowest px-1.5 py-0.5 rounded">Pending</span>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data text-mono-data text-outline">
+<span>HSC: 5M</span>
+<span>•</span>
+<span class="text-secondary">JEE: 4M</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Semiconductors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Intrinsic &amp; extrinsic semiconductors, p-n junction forward/reverse bias, half &amp; full wave rectifiers, Zener voltage regulator, and digital logic gates.
+            </p>
+<div class="mt-space-md flex flex-wrap gap-1.5">
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-secondary-fixed-dim">Y = ‾{A • B} (NAND)</span>
+<span class="font-mono-equation text-mono-data bg-surface-container-highest px-2 py-0.5 rounded text-on-surface">n_i² = n_e × n_h</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Notes
+              </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">science</span> Lab
+              </button>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:bg-surface-bright hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">quiz</span> 62 MCQs
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Chapter Deep Dive Inspector (4 Columns on 2xl) -->
+<div class="2xl:col-span-4 flex flex-col gap-space-md">
+<!-- Sticky Chapter Telemetry & Diagnostic Deck -->
+<div class="bg-surface-container-low rounded-xl p-space-md sticky top-20 flex flex-col gap-space-md shadow-xl">
+<!-- Deck Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Active Analysis Hub</span>
+</div>
+<span class="font-mono-data text-mono-data text-primary bg-primary-container/20 px-2 py-0.5 rounded">HSC-11.03</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Motion in a Plane</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kinematics 2D • Parabolic Projectiles • UCM Dynamics</span>
+</div>
+<!-- Simulation HUD Canvas Preview -->
+<div class="relative w-full h-48 bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col justify-between p-space-sm group">
+<div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(circle, #5de6ff 1px, transparent 1px); background-size: 16px 16px;"></div>
+<!-- Visual Trajectory SVG -->
+<svg class="absolute inset-0 w-full h-full p-2 pointer-events-none" fill="none" viewbox="0 0 300 150">
+<!-- Grid Lines -->
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1" x1="20" x2="280" y1="130" y2="130"></line>
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1" x1="20" x2="20" y1="130" y2="20"></line>
+<!-- Parabolic curve -->
+<path class="text-secondary" d="M 20 130 Q 150 10 280 130" stroke="currentColor" stroke-dasharray="4 2" stroke-width="2.5"></path>
+<!-- Velocity Vectors at Apex -->
+<circle class="text-primary" cx="150" cy="70" fill="currentColor" r="4"></circle>
+<line class="text-primary" marker-end="url(#arrow)" stroke="currentColor" stroke-width="2" x1="150" x2="190" y1="70" y2="70"></line>
+<text class="text-primary font-mono-data text-[10px]" fill="currentColor" x="155" y="60">u_x = u cos θ</text>
+<!-- Apex Label -->
+<text class="text-tertiary font-mono-data text-[10px]" fill="currentColor" x="135" y="90">H_max</text>
+<!-- Launch Vector -->
+<line class="text-tertiary" stroke="currentColor" stroke-width="2" x1="20" x2="55" y1="130" y2="90"></line>
+<text class="text-secondary font-mono-data text-[10px]" fill="currentColor" x="25" y="115">θ = 45°</text>
+</svg>
+<!-- Top HUD Overlay -->
+<div class="relative z-10 flex items-center justify-between text-on-surface">
+<span class="font-mono-data text-mono-data bg-surface-container-high/80 px-2 py-0.5 rounded text-secondary-fixed-dim">u = 24.5 m/s</span>
+<span class="font-mono-data text-mono-data bg-surface-container-high/80 px-2 py-0.5 rounded text-tertiary">g = 9.80 m/s²</span>
+</div>
+<!-- Bottom Live Readouts -->
+<div class="relative z-10 flex items-center justify-between bg-surface-container-high/90 backdrop-blur-sm p-1.5 rounded-lg font-mono-data text-mono-data">
+<div class="flex items-center gap-1">
+<span class="text-outline">R:</span>
+<span class="text-on-surface">61.25 m</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-outline">T_flight:</span>
+<span class="text-on-surface">3.53 s</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-outline">H:</span>
+<span class="text-secondary">15.31 m</span>
+</div>
+</div>
+</div>
+<!-- High-Yield Derivations & Board Blueprint -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">HSC Board Mandatory Derivations</span>
+<span class="font-mono-data text-mono-data text-tertiary">3 Marks Expected</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">1. Equation of Trajectory (Parabola)</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded font-mono-equation text-mono-data text-secondary-fixed-dim">
+              y = x·tan θ - [g / (2u² cos² θ)] × x²
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Establish y = Ax - Bx² form. Crucial: State that horizontal velocity remains invariant (ax = 0) while vertical acceleration ay = -g.
+            </p>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">2. Radial Centripetal Acceleration</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded font-mono-equation text-mono-data text-primary">
+              a_r = -ω²·r = -v²/r × r̂
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Vector differentiation of position vector in polar coordinates. Prove direction points toward instant center.
+            </p>
+</div>
+</div>
+<!-- JEE Main Trap Alerts / Common Pitfalls -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-sm rounded-xl">
+<div class="flex items-center gap-space-xs text-secondary-container">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">JEE Speed &amp; Precision Traps</span>
+</div>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<li class="flex items-start gap-1.5">
+<span class="text-secondary mt-1">•</span>
+<span><strong>Complementary Angles:</strong> For a given speed u, launch angles θ and (90° - θ) yield the same horizontal range R, but different heights (H1 ≠ H2) and times of flight.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-secondary mt-1">•</span>
+<span><strong>Trajectory in Terms of Range:</strong> Remember shortcut form <code class="text-secondary font-mono-equation">y = x tan θ (1 - x/R)</code> to solve JEE Main numerical integer problems in under 45 seconds.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="text-secondary mt-1">•</span>
+<span><strong>Inclined Projectile:</strong> Range is maximized at θ = 45° + β/2 for down the incline, θ = 45° - β/2 for up the incline.</span>
+</li>
+</ul>
+</div>
+<!-- Instant Quick Launch Action -->
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<button class="w-full bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps py-2.5 rounded-xl font-bold tracking-wider transition-all shadow-md flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">play_circle</span> Interactive Sim
+          </button>
+<button class="w-full bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps py-2.5 rounded-xl font-bold tracking-wider transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">menu_book</span> State Formulae
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Systematic Chapter Progress Summary Strip -->
+<div class="w-full bg-surface-container-low px-gutter py-space-lg">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dual-Exam Readiness: 68% Complete</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Class 11 HSC board syllabus verified against Maharashtra Textbook Bureau • NTA JEE Main Physics 2026 aligned</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="flex-1 md:flex-initial px-space-lg py-2.5 bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-caps text-label-caps uppercase rounded-xl transition-all shadow-md">
+          Export Revision Checklist (PDF)
+        </button>
+<button class="flex-1 md:flex-initial px-space-lg py-2.5 bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase rounded-xl transition-all">
+          Launch Chapter 04 Test
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function filterCategory(category, buttonEl) {
+    // Button state update
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+      btn.classList.add('text-on-surface-variant');
+    });
+    buttonEl.classList.remove('text-on-surface-variant');
+    buttonEl.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+
+    // Filter cards
+    const cards = document.querySelectorAll('.chapter-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (category === 'all' || cardCategory === category) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const matchEl = document.getElementById('match-count');
+    if (matchEl) {
+      matchEl.textContent = `${visibleCount} Modules Active`;
+    }
+  }
+
+  function searchChapters(query) {
+    const q = query.toLowerCase().trim();
+    const cards = document.querySelectorAll('.chapter-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const keywords = card.getAttribute('data-keywords') || '';
+      const title = card.querySelector('h3')?.innerText.toLowerCase() || '';
+
+      if (q === '' || keywords.toLowerCase().includes(q) || title.includes(q)) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const matchEl = document.getElementById('match-count');
+    if (matchEl) {
+      matchEl.textContent = `${visibleCount} Modules Found`;
+    }
+  }
+
+  let isDense = false;
+  function toggleAllView() {
+    isDense = !isDense;
+    const grid = document.getElementById('chapters-grid');
+    if (grid) {
+      if (isDense) {
+        grid.className = 'grid grid-cols-1 md:grid-cols-3 gap-space-sm';
+      } else {
+        grid.className = 'grid grid-cols-1 md:grid-cols-2 gap-space-md';
+      }
+    }
+  }
+</script></main></div></body></html>
